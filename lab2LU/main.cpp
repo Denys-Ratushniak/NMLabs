@@ -180,9 +180,6 @@ void LY_eq_B(matrix &L, vector<ld> &Y, vector<ld> &B)
         }
         Y[i] = B[i] - h;
     }
-    //cout << "LLLL" << endl; print(L,30);
-    //cout << "YYYY "; for(auto to:Y) cout << to << " "; cout << endl;
-    //cout << "BBBB "; for(auto to:B) cout << to << " "; cout << endl;
 }
 
 void UX_eq_Y(matrix &U, vector<ld> &X, vector<ld> &Y)
@@ -197,9 +194,6 @@ void UX_eq_Y(matrix &U, vector<ld> &X, vector<ld> &Y)
         }
         X[i] = (Y[i] - h)/U[i][i];
     }
-    //cout << "UUUU" << endl; print(U,30);
-    //cout << "XXXX "; for(auto to:X) cout << to << " "; cout << endl;
-    //cout << "YYYY "; for(auto to:Y) cout << to << " "; cout << endl;
 }
 
 void check_ans(matrix &A, vector<ld> &X, vector<ld> &B, ll cnt=0)
